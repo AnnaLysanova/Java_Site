@@ -22,18 +22,30 @@ public class MenuTests {
         driver = WebDriverManager.chromedriver().create();
         baseUrl = "https://www.bspb.ru/";
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        openSite();
+    }
+
+    private void openSite() {
         driver.get(baseUrl);
     }
 
     @Test
     public void businessZayavkaTest() {
-        driver.get("https://www.bspb.ru/business");
+        gotoBusinessSection();
+        fillCheckForm("Василий", "+7 999 999 99 99");
+    }
+
+    private void fillCheckForm(String name, String phone) {
         driver.findElement(By.id("FIRSTNAME-Имя"));
         driver.findElement(By.id("FIRSTNAME-Имя")).clear();
-        driver.findElement(By.id("FIRSTNAME-Имя")).sendKeys("Василий");
+        driver.findElement(By.id("FIRSTNAME-Имя")).sendKeys(name);
         driver.findElement(By.name("PHONENUMBER-Телефон"));
         driver.findElement(By.name("PHONENUMBER-Телефон")).clear();
-        driver.findElement(By.name("PHONENUMBER-Телефон")).sendKeys("+7 999 999 99 99");
+        driver.findElement(By.name("PHONENUMBER-Телефон")).sendKeys(phone);
+    }
+
+    private void gotoBusinessSection() {
+        driver.get("https://www.bspb.ru/business");
     }
 
     @Test
