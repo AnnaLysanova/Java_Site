@@ -9,8 +9,8 @@ public class MenuTests extends TestBase {
 
     @Test
     public void businessZayavkaTest() {
-        gotoBusinessSection();
-        fillCheckForm("Петр", "+7 999 999 99 99");
+        app.gotoBusinessSection();
+        app.fillCheckForm("Петр", "+7 999 999 99 99");
     }
 
 
