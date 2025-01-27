@@ -1,5 +1,6 @@
-package com.example.Suit1;
+package com.example.Suit1.tests;
 
+import com.example.Suit1.appmanager.ApplicationManager;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 

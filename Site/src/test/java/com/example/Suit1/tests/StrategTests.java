@@ -1,4 +1,4 @@
-package com.example.Suit1;
+package com.example.Suit1.tests;
 
 import org.testng.annotations.Test;
 

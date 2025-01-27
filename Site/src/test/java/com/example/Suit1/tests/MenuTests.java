@@ -1,4 +1,4 @@
-package com.example.Suit1;
+package com.example.Suit1.tests;
 
 import org.testng.annotations.Test;
 
@@ -10,7 +10,7 @@ public class MenuTests extends TestBase {
     @Test
     public void businessZayavkaTest() {
         app.gotoBusinessSection();
-        app.fillCheckForm("Петр", "+7 999 999 99 99");
+        app.getCheckHelper().fillCheckForm("Петр", "+7 999 999 99 99");
     }
 
 
