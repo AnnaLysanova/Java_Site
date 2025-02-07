@@ -1,6 +1,7 @@
 package com.example.Suit1.appmanager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -34,10 +35,12 @@ public class ApplicationManager {
         driver.quit();
     }
 
+    @Step
     public void openStrategPage() {
         driver.findElement(By.linkText("Стратегм")).click();
     }
 
+    @Step(value = "пользователь открывает меню второго уровня")
     public void openSecondMenu() {
         driver.findElement(By.xpath("//button[@id='popover-trigger-:R6kqdt9jltmH1:']/p")).click();
     }
