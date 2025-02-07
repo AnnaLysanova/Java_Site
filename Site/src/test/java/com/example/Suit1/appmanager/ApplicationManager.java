@@ -35,7 +35,7 @@ public class ApplicationManager {
     }
 
     public void openStrategPage() {
-        driver.findElement(By.linkText("Стратег")).click();
+        driver.findElement(By.linkText("Стратегм")).click();
     }
 
     public void openSecondMenu() {
