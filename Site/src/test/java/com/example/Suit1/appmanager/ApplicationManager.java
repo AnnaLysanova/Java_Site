@@ -40,7 +40,7 @@ public class ApplicationManager {
         driver.findElement(By.linkText("Стратег")).click();
     }
 
-    @Step(value = "пользователь открывает меню второго уровня")
+    //@Step(value = "пользователь открывает меню второго уровня")
     public void openSecondMenu() {
         driver.findElement(By.xpath("//button[@id='popover-trigger-:R6kqdt9jltmH1:']/p")).click();
     }
