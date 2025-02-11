@@ -35,9 +35,9 @@ public class ApplicationManager {
         driver.quit();
     }
 
-    @Step
+   // @Step
     public void openStrategPage() {
-        driver.findElement(By.linkText("Стратегм")).click();
+        driver.findElement(By.linkText("Стратег")).click();
     }
 
     @Step(value = "пользователь открывает меню второго уровня")

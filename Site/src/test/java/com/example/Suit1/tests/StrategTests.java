@@ -1,6 +1,6 @@
 package com.example.Suit1.tests;
 
-import io.qameta.allure.Step;
+
 import org.testng.annotations.Test;
 
 public class StrategTests extends TestBase{
